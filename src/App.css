@@ -9,10 +9,15 @@ body {
   --type-first: Helvetica, Arial, sans-serif;
   --type-second: "Spectral", Georgia;
   font-family: var(--type-first);
+  padding-top: 4rem;
 }
 
 ul, li {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 img {
