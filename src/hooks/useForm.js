@@ -8,6 +8,10 @@ const types = {
   password: {
     regex: /^([a-zA-Z0-9_-]){3,30}$/,
     message: "Sua senha precisa ter entre 3 e 30 caracteres."
+  },
+  passwordCreate: {
+    regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{2,}$/,
+    message: "A senha precisa ter 1 caracter maíusculo, 1 minúsculo, e um digito, com no mínimo 3 caracteres."
   }
 }
 
