@@ -60,7 +60,6 @@ const UserContext = ({children}) => {
       const {url, options} = TOKEN_POST_FETCH({username, password});
 
       const tokenRes = await fetch(url, options);
-      console.log(tokenRes);
       if(!tokenRes.ok) throw new Error("Error: Usuário ou senha inválidos");
       const {token} = await tokenRes.json();
   
