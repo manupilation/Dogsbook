@@ -13,7 +13,7 @@ const FeedPhotos = ({setModalPhoto}) => {
     async function fetchFotos() {
       const {url, options} = PHOTOS_GET_FETCH({page: 1, total: 6, user: 0});
 
-      const {response} = await request(url, options);
+      await request(url, options);
     }
     fetchFotos()
   }, [request]);
