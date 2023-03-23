@@ -12,6 +12,10 @@ const types = {
   passwordCreate: {
     regex: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{2,}$/,
     message: "A senha precisa ter 1 caracter maíusculo, 1 minúsculo, e um digito, com no mínimo 3 caracteres."
+  },
+  numberInt: {
+    regex: /^\d+$/,
+    message: "Utilize apenas números",
   }
 }
 
