@@ -1,6 +1,7 @@
 import URL from "./constants/URL";
 import {
   COMMENT_POST as COMMENT_POST_URL,
+  PHOTO_DELETE as PHOTO_DELETE_URL,
   PHOTO_POST as PHOTO_POST_URL,
   TOKEN_POST as TOKEN_POST_URL,
   TOKEN_VALIDATE_POST,
@@ -101,6 +102,18 @@ export function COMMENT_POST_FETCH(id, body, token) {
         Authorization: "Bearer " + token,
       },
       body: JSON.stringify(body),
+    },
+  }
+}
+
+export function PHOTO_DELETE_FETCH(id, token) {
+  return {
+    url: URL + PHOTO_DELETE_URL + `/${id}`,
+    options: {
+      method: "DELETE",
+      headers: {
+        Authorization: "Bearer " + token,
+      },
     },
   }
 }
