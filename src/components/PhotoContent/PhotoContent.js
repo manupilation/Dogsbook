@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { userContext } from '../../UserContext';
 import PhotoComments from './PhotoComments';
 import styles from "./PhotoContent.module.css"
+import PhotoDelete from './PhotoDelete';
 
 const PhotoContent = ({data}) => {
   const {photo, comments} = data;
