@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { userContext } from '../../UserContext';
 import PhotoComments from './PhotoComments';
 import styles from "./PhotoContent.module.css"
 
 const PhotoContent = ({data}) => {
   const {photo, comments} = data;
+  const user = useContext(userContext);
+
   return (
     <div className={styles.photo}>
       <div className={styles.img}>
