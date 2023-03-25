@@ -16,7 +16,6 @@ const FeedPhotos = ({setModalPhoto, user, page, setInfinite}) => {
 
       const { response, json } = await request(url, options);
       if(response && response.ok && json.length < total) setInfinite(false);
-      console.log(response);
     }
 
     fetchFotos()
