@@ -1,8 +1,10 @@
 import React from 'react';
+import useForm from '../../hooks/useForm';
 import Button from '../Form/Button/Button';
 import Input from '../Form/Input/Input';
 
 const LoginRecover = () => {
+  const email = useForm('email');
   function handleSubmit(event) {
     event.preventDefault();
   }
@@ -15,6 +17,7 @@ const LoginRecover = () => {
           label="Email/Usuário"
           type="text"
           name="email"
+          {...email}
         />
         <Button >Enviar Email</Button>
       </form>
