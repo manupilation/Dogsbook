@@ -50,4 +50,7 @@ const Feed = ({user}) => {
   );
 }
 
+Feed.defaultProps = {
+  user: 0,
+}
 export default Feed;
