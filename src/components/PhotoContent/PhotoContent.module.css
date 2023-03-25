@@ -69,6 +69,20 @@
   padding: 0 2rem;
 }
 
+.single.photo {
+  grid-template-columns: 1fr;
+  height: auto;
+}
+.single .details {
+  padding: 1rem 0 0 0;
+}
+
+.single .img {
+  grid-row: 1;
+  border-radius: .2rem;
+  overflow: hidden;
+}
+
 @media (max-width: 64rem) {
   .photo {
     height: auto;
