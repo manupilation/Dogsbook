@@ -8,6 +8,7 @@ import Error from '../Helper/Error';
 import style from "./LoginForm.module.css"
 
 import styleBtn from '../Form/Button/Button.module.css';
+import Head from '../Helper/Head';
 
 const LoginForm = () => {
   const username = useForm();
@@ -28,6 +29,7 @@ const LoginForm = () => {
 
   return (
     <section className='animeLeft'>
+      <Head title="Login" description="Entre ou cadastre-se já!"/>
       <h1 className='title'>Login</h1>
       <form onSubmit={handleSubmit} className={style.form}>
         <Input
@@ -51,7 +53,7 @@ const LoginForm = () => {
         </Button>}
         <Error error={error} />
       </form>
-      <Link to="/login/perdeu" className={style.perdeu}>Esqueceu a senha?</Link>
+      <Link to="/login/recover" className={style.perdeu}>Esqueceu a senha?</Link>
       <div className={style.cadastro}>
         <h2 className={style.subtitle}>Cadastre-se</h2>
         <p>Ainda não possui conta ? Cadastre-se no site.</p>
