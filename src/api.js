@@ -2,6 +2,7 @@ import URL from "./constants/URL";
 import {
   COMMENT_POST as COMMENT_POST_URL,
   PHOTO_DELETE as PHOTO_DELETE_URL,
+  PHOTO_GET as PHOTO_GET_URL,
   PHOTO_POST as PHOTO_POST_URL,
   TOKEN_POST as TOKEN_POST_URL,
   TOKEN_VALIDATE_POST,
@@ -118,3 +119,8 @@ export function PHOTO_DELETE_FETCH(id, token) {
   }
 }
 
+export function ONLY_PHOTO_GET_FETCH(id) {
+  return {
+    url: URL + PHOTO_GET_URL + `/${id}`,
+  }
+}
