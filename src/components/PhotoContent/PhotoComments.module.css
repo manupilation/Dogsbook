@@ -4,7 +4,15 @@
   padding: 0 2rem;
 }
 
+.single.comments {
+  padding: 0px;
+}
+
 .comments li {
   margin-bottom: .5rem;
   line-height: 1.2;
+}
+
+.comments li b {
+  margin-right: .4rem;
 }
