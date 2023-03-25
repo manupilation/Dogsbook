@@ -6,6 +6,7 @@ import { USER_POST_FETCH } from '../../api';
 import { userContext } from '../../UserContext';
 import useFetch from '../../hooks/useFetch';
 import Error from '../Helper/Error';
+import Head from '../Helper/Head';
 
 const LoginCreate = () => {
   const username = useForm();
@@ -32,6 +33,7 @@ const LoginCreate = () => {
 
   return (
     <section className='animeLeft'>
+      <Head title="Crie sua conta" description="Crie sua conta já na Little Paws!"/>
       <h1 className='title'>Cadastre-se</h1>
       <form onSubmit={handleSubmit}>
         <Input 
