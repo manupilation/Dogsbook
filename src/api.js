@@ -2,6 +2,7 @@ import URL from "./constants/URL";
 import {
   COMMENT_POST as COMMENT_POST_URL,
   PASSWORD_LOST as PASSWORD_LOST_URL,
+  PASSWORD_RESET_POST as PASSWORD_RESET_POST_URL,
   PHOTO_DELETE as PHOTO_DELETE_URL,
   PHOTO_GET as PHOTO_GET_URL,
   PHOTO_POST as PHOTO_POST_URL,
@@ -129,6 +130,19 @@ export function ONLY_PHOTO_GET_FETCH(id) {
 export function PASSWORD_LOST_FETCH(body) {
   return {
     url: URL + PASSWORD_LOST_URL,
+    options: {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(body),
+    },
+  }
+}
+
+export function PASSWORD_RESET(body) {
+  return {
+    url: URL + PASSWORD_RESET_POST_URL,
     options: {
       method: "POST",
       headers: {
