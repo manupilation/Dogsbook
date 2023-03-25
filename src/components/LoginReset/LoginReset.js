@@ -6,6 +6,7 @@ import useForm from '../../hooks/useForm';
 import Button from '../Form/Button/Button';
 import Input from '../Form/Input/Input';
 import Error from '../Helper/Error';
+import Head from '../Helper/Head';
 
 const LoginReset = () => {
   const [login, setLogin] = useState("");
@@ -46,12 +47,13 @@ const LoginReset = () => {
 
   return (
     <div>
+      <Head title="Redefinir a senha"/>
       <h1 className='title'>Redefinir a senha:</h1>
       <form onSubmit={handleSubmit}>
         {key}
         {login}
         <Input
-          label="Nova senha"
+          label="Nova senha:"
           type="password"
           name="password"
           {...password}
