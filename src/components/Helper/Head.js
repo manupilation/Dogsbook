@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 const Head = (props) => {
 
   useEffect(() => {
-    document.title = props.title + "| Little Paws";
+    document.title = props.title + " | Little Paws";
 
     document.querySelector("meta[name='description']")
     .setAttribute('content', props.description || "");
