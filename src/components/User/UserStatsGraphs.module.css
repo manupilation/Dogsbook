@@ -1,0 +1,54 @@
+.graph {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.graphItem {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+  border-radius: .2rem;
+  display: grid;
+  align-items: center;
+}
+
+.total {
+  grid-column: 1 / 3;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.noContent {
+  display: grid;
+}
+
+.noContent p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.noContent div {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.noContent div a {
+  background-color: #FB1;
+  padding: .2rem;
+  border-radius: .3rem;
+}
+
+.noContent div a:hover {
+  background-color: #FEA;
+}
+
+@media (max-width: 40px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .total {
+    grid-column: 1;
+  }
+}
