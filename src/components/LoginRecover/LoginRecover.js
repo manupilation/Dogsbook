@@ -21,7 +21,7 @@ const LoginRecover = () => {
   }
 
   return (
-    <section>
+    <section className='animeLeft'>
       <Head title="Perdeu a senha ?" description=""/>
       <h1 className='title'>Perdeu a senha ?</h1>
       {

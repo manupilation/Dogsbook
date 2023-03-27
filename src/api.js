@@ -6,6 +6,7 @@ import {
   PHOTO_DELETE as PHOTO_DELETE_URL,
   PHOTO_GET as PHOTO_GET_URL,
   PHOTO_POST as PHOTO_POST_URL,
+  STATS_GET as STATS_GET_URL,
   TOKEN_POST as TOKEN_POST_URL,
   TOKEN_VALIDATE_POST,
   USER_GET as USER_GET_URL,
@@ -150,5 +151,17 @@ export function PASSWORD_RESET(body) {
       },
       body: JSON.stringify(body),
     },
+  }
+}
+
+export function GET_STATS_FETCH(token) {
+  return {
+    url: URL + STATS_GET_URL,
+    options: {
+      method: "GET",
+      headers: {
+        Authorization: 'Bearer ' + token,
+      }
+    }
   }
 }
